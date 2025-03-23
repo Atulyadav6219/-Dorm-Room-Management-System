@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Login Page */
+.login-container {
+    background: linear-gradient(135deg, #2e3237, #5e00ff);
+}
+
+.card {
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.form-control {
+    border-radius: 25px;
+    padding-left: 40px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    border-color: #007bff;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #6c757d;
+}
+
+.btn-primary {
+    border-radius: 25px;
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Dashboard */
+.navbar {
+    background: linear-gradient(90deg, #1a1a1a, #333);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    color: #00c6ff !important;
+}
+
+.nav-link {
+    color: #fff !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #00c6ff !important;
+}
+
+.dashboard-title {
+    color: #333;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card {
+    border-radius: 15px;
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.custom-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    color: #333;
+    font-weight: 600;
+}
+
+.card-text {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.custom-btn {
+    border-radius: 20px;
+    background: #007bff;
+    color: #fff;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    transition: background 0.3s ease;
+}
+
+.custom-btn:hover {
+    background: #0056b3;
+    color: #fff;
+}
+
+/* Task Page Specific */
+.list-group-item {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #fff;
+    transition: background 0.3s ease;
+}
+
+.list-group-item.completed {
+    background: #e6ffe6;
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.task-actions .btn {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .custom-card {
+        margin-bottom: 20px;
+    }
+    .dashboard-title {
+        font-size: 1.5rem;
+    }
+    .list-group-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .task-actions {
+        margin-top: 10px;
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 15px;
+    }
+}
